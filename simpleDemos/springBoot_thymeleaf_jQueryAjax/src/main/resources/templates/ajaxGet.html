@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body>
+<div>
+    <p th:text="'name:' + ${name} + '! age:'+${age}"/>
+</div>
+
+<div>
+    <label for="name">name:</label>
+    <input id="name" name="name" type="text" value=""><br/>
+    <label for="age">age:</label>
+    <input id="age" name="age" type="text" value=""><br/>
+    <input type="radio" name="useData" value="data"/>data:<br/>
+    <input type="radio" name="useData" value="noData"/>noData:<br/>
+    <button id="ajax_get">ajax_get</button>
+</div>
+<!--
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    -->
+<script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+<script type="text/javascript" th:src="@{/js/ajaxGet.js}"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+spring --version
+    :显示cli的版本
+spring init
+    :构建一个示例项目
+spring init -dweb,jpa,security
+    :构建一个项目，同时引入web，jpa，springSecurity依赖
+spring help init
+    :产看init命令
+spring init -l
+    :init的参数和选项
+spring shell
+    :进入cli的专属shell
+

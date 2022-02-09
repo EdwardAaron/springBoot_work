@@ -1,0 +1,9 @@
+Condition I
+    :用来确定某个beanDefinition 是否可以被注册
+方法 ：
+    /**
+        是否满足指定条件，以便能够注册备案Definition
+        context ：
+        metadata ：class或method的元数据
+    **/
+    boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata);
